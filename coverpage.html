@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  background: url(bg3.jpeg); 
+  background-repeat: repeat;
+  background-position: right;
+  background-attachment: scroll;
+
+}
+img {
+  max-width:100%;
+    height:auto;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  flex-basis: 40%
+}
+.text {
+  text-align: justify;
+  font-size: 20px;
+  padding-left: 20px;
+  color: black;
+  }
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+   .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 34px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  }
+  .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="centered"> <h1 style="font-family: Brush Script MT ; font-size: 200px; color: white ;">Kusina ni Jomar</h1>
+</div>
+
+<img src="a.jpg"  width="100%" height="100">
+</div>
+
+  <center><a class="button" href="file:///C:/Users/mine/Desktop/New%20folder%20(2)/proj/food.html" ; style="vertical-align:middle"><span>Enter </span></a>
+
+</center>
+
+
+</body>
+</html>
